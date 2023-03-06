@@ -11,10 +11,10 @@ type FeatureDTO struct {
 
 func FromFeature(feature *entities.Feature) *FeatureDTO {
 	return &FeatureDTO{
-		Id:          feature.Id(),
-		Title:       feature.Title(),
-		Description: feature.Description(),
-		Enabled:     feature.Enabled(),
+		Id:          feature.ID,
+		Title:       feature.Title,
+		Description: feature.Description,
+		Enabled:     feature.Enabled,
 	}
 }
 
